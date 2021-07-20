@@ -5,23 +5,32 @@ public class AdditionInJava{
         System.out.println("Adding Integers");
         int a =5;
         int b =12;
-        int c = a+b; //Addition of Integers
-        System.out.println("Adding a:"+a+" to b:"+b+" = "+c);
-
+        addIntegers(a, b);
         //Floating Numbers addition
+        System.out.println("Adding float");
         float fa =4.34f;
         float fb= 3.67f;
-        float fc = fa+fb;
-        System.out.println("="+fc);
+        addFloat(fa,fb);
 
         //double  addition
+        System.out.println("Adding Double");
         double da = 5.34567;
         double db = 32.34456788;
-        double dc= da+db;
-        System.out.println("="+dc);
+        addDouble(da, db);
 
         
 
 
+    }
+    public static void addIntegers(int a , int b){
+        System.out.println("Sum of integers:"+(a+b));
+    }
+    public static void addFloat(float a , float b){
+        float x = a+b;
+        System.out.println("Sum of float numbers :"+x);
+    }
+    public static void addDouble(double a , double b){
+        double x = a+b;
+        System.out.println("Sum of double: "+x);
     }
 }
